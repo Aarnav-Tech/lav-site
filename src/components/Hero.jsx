@@ -29,7 +29,7 @@ export default function Hero() {
           <div className="rounded-full p-1 animate-pulse border-4 border-pink-400 border-opacity-50 shadow-lg">
             <div className="rounded-full p-1 border-4 border-pink-600 border-opacity-50 animate-spin-slow">
               <Image
-                src="/lavanya.jpg"
+                src="/lavanya.jpeg"
                 alt="Lavanya Portrait"
                 width={350}
                 height={350}
