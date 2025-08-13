@@ -14,7 +14,6 @@ export default function Contact() {
       </p>
       <div className="flex justify-center gap-6 mt-8 text-2xl text-pink-400">
         <a href="https://www.instagram.com/your_wardrobe_ghost" target="_blank"><FaInstagram /></a>
-        <a href="https://discord.gg" target="_blank"><FaDiscord /></a>
         <a href="https://www.roblox.com/users/4712539804/profile" target="_blank"><SiRoblox /></a>
       </div>
     </section>

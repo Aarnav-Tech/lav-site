@@ -3,17 +3,20 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="bg-[var(--color-bg-dark)] text-white py-24 px-6">
+    <section className="bg-[var(--color-bg-dark)] text-white min-h-[80vh] md:min-h-screen py-24 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
 
         {/* Left Text */}
-        <div className="text-left">
-          <h1 className="text-2xl md:text-8xl font-bold mb-8" style={{ fontFamily: "var(--font-lavishly)" }}>
+        <div className="text-center md:text-left">
+          <h1
+            className="text-5xl sm:text-6xl md:text-7xl font-bold mb-4"
+            style={{ fontFamily: "var(--font-lavishly)" }}
+          >
             <span className="bg-gradient-to-r from-pink-400 to-pink-600 bg-clip-text text-transparent">
               Lavanya Soy
             </span>
           </h1>
-          <p className="text-lg text-gray-300 mb-6">
+          <p className="text-lg sm:text-xl text-gray-300 mb-6">
             Dreamer • Creator • Explorer
           </p>
           <a
@@ -24,18 +27,18 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Right Image with Animated Gradient Ring */}
-        <div className="flex justify-center md:justify-end">
-          <div className="relative w-[360px] h-[360px]">
-            {/* Animated gradient ring */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-pink-400 via-pink-600 to-pink-500 animate-spin blur-xl"></div>
+        {/* Right Image with Gradient Ring */}
+        <div className="flex justify-center md:justify-end mt-12 md:mt-0">
+          <div className="relative w-72 sm:w-80 md:w-96 h-72 sm:h-80 md:h-96">
+            {/* Static gradient ring */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-pink-400 via-pink-600 to-pink-500 blur-xl"></div>
 
             {/* Avatar Image */}
             <div className="absolute inset-6 rounded-full overflow-hidden border-4 border-[rgba(255,255,255,0.1)]">
               <Image
-                src="/avatar.jpg" // your avatar file
+                src="/avatar.jpg"
                 alt="Lavanya Portrait"
-                width={288} // slightly smaller than container
+                width={288}
                 height={288}
                 className="w-full h-full object-cover"
               />
