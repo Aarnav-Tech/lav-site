@@ -33,7 +33,7 @@ export default function Hero() {
             {/* Avatar Image */}
             <div className="absolute inset-6 rounded-full overflow-hidden border-4 border-[rgba(255,255,255,0.1)]">
               <Image
-                src="/avatar.png" // your avatar file
+                src="/avatar.jpg" // your avatar file
                 alt="Lavanya Portrait"
                 width={288} // slightly smaller than container
                 height={288}
