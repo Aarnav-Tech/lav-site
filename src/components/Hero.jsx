@@ -8,9 +8,9 @@ export default function Hero() {
 
         {/* Left Text */}
         <div className="text-left">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">
+          <h1 className="text-2xl md:text-8xl font-bold mb-8" style={{ fontFamily: "var(--font-lavishly)" }}>
             <span className="bg-gradient-to-r from-pink-400 to-pink-600 bg-clip-text text-transparent">
-              Lavanya
+              Lavanya Soy
             </span>
           </h1>
           <p className="text-lg text-gray-300 mb-6">
@@ -24,16 +24,20 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Right Image with Animated Throbber */}
-        <div className="flex justify-center md:justify-end relative">
-          <div className="rounded-full p-1 animate-pulse border-4 border-pink-400 border-opacity-50 shadow-lg">
-            <div className="rounded-full p-1 border-4 border-pink-600 border-opacity-50 animate-spin-slow">
+        {/* Right Image with Animated Gradient Ring */}
+        <div className="flex justify-center md:justify-end">
+          <div className="relative w-[360px] h-[360px]">
+            {/* Animated gradient ring */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-pink-400 via-pink-600 to-pink-500 animate-spin blur-xl"></div>
+
+            {/* Avatar Image */}
+            <div className="absolute inset-6 rounded-full overflow-hidden border-4 border-[rgba(255,255,255,0.1)]">
               <Image
-                src="/lavanya.jpeg"
+                src="/avatar.png" // your avatar file
                 alt="Lavanya Portrait"
-                width={350}
-                height={350}
-                className="rounded-2xl shadow-xl"
+                width={288} // slightly smaller than container
+                height={288}
+                className="w-full h-full object-cover"
               />
             </div>
           </div>

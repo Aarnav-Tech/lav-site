@@ -1,12 +1,14 @@
 "use client";
 
-export default function SpotifyEmbed({ url }) {
+export default function SpotifyEmbed({ link }) {
   return (
     <iframe
-      className="rounded-xl w-full h-80 border border-pastel-purple/30"
-      src={url}
-      loading="lazy"
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      src={link}
+      width="300"
+      height="380"
+      frameBorder="0"
+      allow="encrypted-media"
+      className="rounded-xl shadow-lg hover:scale-105 transition-transform"
     />
   );
 }
