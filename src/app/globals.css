@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Quicksand:wght@400;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --font-quicksand: "Quicksand", sans-serif;
+
+  --color-pastel-pink: #fbcfe8;
+  --color-pastel-purple: #e9d5ff;
+  --color-bg-dark: #1a1a2e;
+  --color-bg-darker: #121212;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-poppins);
+  background: var(--color-bg-dark);
+  color: #f5f5f5;
+  min-height: 100vh;
+}
